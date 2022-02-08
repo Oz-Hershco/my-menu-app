@@ -1,0 +1,43 @@
+//Colors
+$darkbrown: #261807;
+$brown: #400601;
+$red: #f21905;
+$yellow: #F27905;
+$darkred: #a61103;
+$darkyellow: #A65303;
+$darkblue: #045766;
+$grey: #f2f2f2;
+
+.App {
+    height: 100%;
+    min-height: 100vh;
+    background-color: $grey;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App .App--Title {
+    margin: 0;
+    text-align: center;
+    font-size: 28pt;
+    color: white;
+    background-color: $brown;
+    border-right: 7px solid $darkblue;
+    border-left: 7px solid $darkblue;
+}
+.App .App--Title::after {
+    content: "____";
+    color: transparent;
+    border-bottom: 8px solid $red;
+    border-top: 6px solid $yellow;
+}
+.App .App--Title::before {
+    content: "____";
+    color: transparent;
+    border-top: 8px solid $red;
+    border-bottom: 6px solid $yellow;
+}

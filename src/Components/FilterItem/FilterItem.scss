@@ -1,0 +1,35 @@
+@import "../../App.scss";
+
+.FilterItem {
+    color: $yellow;
+    font-size: 14pt;
+    border: 2px solid $yellow;
+    margin: 0 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.35em 0;
+}
+
+.FilterItem:hover {
+    color: white;
+    background-color: $yellow;
+}
+
+.FilterItem:active {
+    color: white;
+    background-color: $darkyellow;
+    border: 2px solid $darkyellow;
+    user-select: none;
+}
+
+.FilterItem .FilterItem--Label {
+    padding: 0.35em 1em;
+}
+
+.FilterItem.Checked {
+    color: white;
+    font-size: 14pt;
+    border: 2px solid $yellow;
+    background-color: $yellow;
+}
