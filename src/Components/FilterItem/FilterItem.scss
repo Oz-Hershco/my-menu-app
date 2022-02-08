@@ -6,7 +6,6 @@
     border: 2px solid $yellow;
     margin: 0 0.5em;
     border-radius: 5px;
-    cursor: pointer;
     user-select: none;
     padding: 0.35em 0;
 }
@@ -25,6 +24,7 @@
 
 .FilterItem .FilterItem--Label {
     padding: 0.35em 1em;
+    cursor: pointer;
 }
 
 .FilterItem.Checked {
@@ -32,4 +32,11 @@
     font-size: 14pt;
     border: 2px solid $yellow;
     background-color: $yellow;
+}
+
+.FilterItem.Checked:active {
+    color: white;
+    background-color: $darkyellow;
+    border: 2px solid $darkyellow;
+    user-select: none;
 }

@@ -1,27 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateFilter } from '../../Redux/filtersSlice';
 import './FilterItem.scss';
 
 export default function FilterItem({ filter }) {
 
-    const [isFlitered, setIsFlitered] = useState(false);
-
-    useEffect(() => {
-        if (filter.id === '52200b61-34eb-4c4b-803c-7017707495ef') {
-            setIsFlitered(true);
-        }
-        return () => {
-        };
-    }, []);
-
+    const filters = useSelector((state) => state.filters.value);
+    const dispatch = useDispatch();
 
     const handleInputChange = (e) => {
+        const allFiltersId = "52200b61-34eb-4c4b-803c-7017707495ef";
         const value = e.target.checked;
-        setIsFlitered(value);
+
+        if (filter.id === allFiltersId) {
+            filters.forEach(item => {
+                dispatch(updateFilter({
+                    id: item.id,
+                    selected: !filter.selected
+                }));
+            });
+        } else {
+            dispatch(updateFilter({
+                id: allFiltersId,
+                selected: false
+            }));
+            dispatch(updateFilter({
+                id: filter.id,
+                selected: value
+            }));
+        }
+
+
     }
 
     return (
-        <div className={isFlitered ? 'FilterItem  Checked' : 'FilterItem'}>
-            <input onChange={handleInputChange} style={{ display: 'none' }} type="checkbox" id={filter.id} name={filter.name} value={filter.name} checked={isFlitered}></input>
+        <div className={filter.selected ? 'FilterItem  Checked' : 'FilterItem'}>
+            <input onChange={handleInputChange} style={{ display: 'none' }} type="checkbox" id={filter.id} name={filter.name} value={filter.name} checked={filter.selected}></input>
             <label className='FilterItem--Label' htmlFor={filter.id}>{filter.name}</label>
         </div>
     );

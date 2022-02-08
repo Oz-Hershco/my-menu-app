@@ -1,0 +1,138 @@
+@import "../../App.scss";
+
+.AddItemMenu {
+    box-sizing: border-box;
+    width: 360px;
+    height: 390px;
+    position: fixed;
+    z-index: 100;
+    transition: ease-in-out 500ms;
+    background-color: white;
+    border-top-right-radius: 7px;
+    bottom: 0;
+    right: 10%;
+    padding: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.AddItemMenu.Open {
+    bottom: 0;
+}
+
+.AddItemMenu.Closed {
+    bottom: -390px;
+}
+
+.AddItemMenu .AddItemMenu--ToggleBtn {
+    display: flex;
+    align-items: center;
+    padding: 0.3em 1em;
+    background-color: white;
+    position: absolute;
+    bottom: 390px;
+    left: 0;
+    color: white;
+    background-color: $darkblue;
+    font-size: 10pt;
+    font-weight: 500;
+    border: none;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    cursor: pointer;
+    height: 3em;
+}
+
+.AddItemMenu .AddItemMenu--FieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.AddItemMenu .AddItemMenu--FieldContainer label {
+    color: lighten($color: #000000, $amount: 50);
+    font-weight: 600;
+    font-size: 11pt;
+    margin-bottom: 0.25em;
+}
+
+.AddItemMenu .AddItemMenu--FieldContainer input {
+    height: 3em;
+    padding: 0 0.75em;
+    font-size: 11pt;
+    border: 1px solid lighten($color: #000000, $amount: 75);
+    border-radius: 5px;
+}
+
+.AddItemMenu .AddItemMenu--FieldContainer input:focus {
+    outline-color: lighten($color: $darkyellow, $amount: 20);
+}
+
+.AddItemMenu .AddItemMenu--FieldContainer .AddItemMenu--LetterCounter {
+    font-size: 10pt;
+    color: lighten($color: #000000, $amount: 50);
+    margin-left: 1em;
+    margin-top: 2px;
+}
+
+.AddItemMenu .AddItemMenu--SubmitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 1em;
+    background-color: white;
+    color: white;
+    background-color: $red;
+    font-size: 10pt;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3em;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.AddItemMenu .AddItemMenu--SubmitBtn:active {
+    background-color: $darkred;
+}
+
+.AddItemMenu .AddItemMenu--SubmitBtn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .AddItemMenu {
+        box-sizing: border-box;
+        width: 290px;
+        height: 390px;
+        position: fixed;
+        z-index: 100;
+        transition: ease-in-out 500ms;
+        background-color: white;
+        border-top-right-radius: 7px;
+        bottom: 0;
+        right: 5%;
+        padding: 1.5em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .AddItemMenu .AddItemMenu--ToggleBtn {
+        display: flex;
+        align-items: center;
+        padding: 0.3em 1em;
+        background-color: white;
+        position: absolute;
+        bottom: 390px;
+        left: 0;
+        color: white;
+        background-color: $darkblue;
+        font-size: 10pt;
+        font-weight: 500;
+        border: none;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        cursor: pointer;
+        height: 3em;
+    }
+}

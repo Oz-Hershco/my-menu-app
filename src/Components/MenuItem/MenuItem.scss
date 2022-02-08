@@ -44,6 +44,13 @@
 }
 
 @media only screen and (max-width: 665px) {
+    .MenuItem {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 45em;
+        margin: 1.75em 0;
+    }
+
     .MenuItem .MenuItem--Img {
         height: 10em;
         width: 100%;
@@ -59,8 +66,3 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
-    .MenuItem .MenuItem--Img {
-        width: initial;
-    }
-}
