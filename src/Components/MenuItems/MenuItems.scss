@@ -1,6 +1,7 @@
 .MenuItems {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 75em;
 }
