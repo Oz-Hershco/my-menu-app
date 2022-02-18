@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+.CategorySection {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    border: 1px solid $brown;
+    border-radius: 5px;
+
+    &--Container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 78em;
+    }
+
+    &--Title {
+        background-color: $brown;
+        color: white;
+        font-weight: 700;
+        font-size: 20pt;
+        margin: 0;
+        padding: .25em .5em;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}
+
+@media only screen and(max-width: 1263.5px) {
+    .CategorySection {
+        &--Container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 75em;
+        }
+    }
+}

@@ -9,7 +9,7 @@ function App() {
       <h1 className="App--Title">MENU</h1>
       <MenuFilters />
       <MenuItems />
-      <AddItemMenu />
+      {/* <AddItemMenu /> */}
     </div>
   );
 }

@@ -10,13 +10,23 @@ export const filtersSlice = createSlice({
         selected:true
       },
       {
-        id:"dd730a41-0af7-4020-ac3a-992d5603f063",
-        name:"Savory",
+        id:"4f13ac6e-99b7-496f-h015-f2b3dac01856",
+        name:"Starters",
+        selected:false
+      },
+      {
+        id:"4f13ac6e-99b7-496f-9015-f2b3dac01102",
+        name:"Mains",
+        selected:false
+      },
+      {
+        id:"4f13ac6e-99b7-496f-9015-f2b2dac0110f",
+        name:"Dessert",
         selected:false
       },
       {
         id:"4f13ac6e-99b7-496f-9015-f2b4dac0110e",
-        name:"Sweet",
+        name:"Drinks",
         selected:false
       },
     ],

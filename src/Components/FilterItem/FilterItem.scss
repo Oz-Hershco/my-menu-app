@@ -4,7 +4,7 @@
     color: $yellow;
     font-size: 14pt;
     border: 2px solid $yellow;
-    margin: 0 0.5em;
+    margin: 0.5em;
     border-radius: 5px;
     user-select: none;
     padding: 0.35em 0;
@@ -39,4 +39,10 @@
     background-color: $darkyellow;
     border: 2px solid $darkyellow;
     user-select: none;
+}
+
+@media only screen and(max-width:619px) {
+    .FilterItem{
+        width: 100%;
+    }
 }
