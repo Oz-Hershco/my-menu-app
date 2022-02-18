@@ -2,7 +2,7 @@
 
 This is a free to use app inspired by [freeCodeCamp](freeCodeCamp.org) video which can be found [here](https://www.youtube.com/watch?v=a_7Z7C_JCyo&t=5268s).
 
-*Images are just for presentation purposes. I took them from a simple google search. If you'd like to find the creators you can check out the link of the relevant image below: a
+*Images are just for presentation purposes. I took them from a simple google search. If you'd like to find the creators you can check out the link of the relevant image below: 
 
 - https://iamafoodblog.b-cdn.net/wp-content/uploads/2019/02/full-english-7355w-2.jpg 
 - https://iamafoodblog.b-cdn.net/wp-content/uploads/2020/04/small-batch-sourdough-1941w-scaled.jpg
